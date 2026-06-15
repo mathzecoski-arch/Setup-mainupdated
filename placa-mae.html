@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Setup | Processadores</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/componentes.css">
+
+
+</head>
+
+
+
+
+<body>
+    <header class="cabecalho-principal">
+        <div class="container">
+            <h1>Simulador de Setup</h1>
+            <nav aria-label="Navegação de etapas">
+                <!-- Mostra a progressão do usuário -->
+                 <span class="etapa ativa"> Passo 2 de 8: Placa-Mãe</span>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="secao-produtos">
+            <h2>Escolha a Placa-Mãe</h2>
+            <p>A base do seu setup. Garanta que ela tenha as conexões necessárias para os seus componentes.</p>
+            
+            <div id="lista-produtos" class="grid-produtos">
+                <p>Carregando opções...</p>
+            </div>
+        </section>
+
+        <div class="acoes-navegacao">
+            <a href="processadores.html" class="btn-secundario">Voltar</a>
+            <button onclick="pularEtapa()" class="btn-secundario" style="border: none; text-decoration: underline;">Pular esta etapa</button>
+            <a href="memoria-ram.html" class="btn-primario" id="btn-proximo">Avançar</a>
+        </div>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+    <script>carregarProdutos("placa_mae");</script>
+</body>

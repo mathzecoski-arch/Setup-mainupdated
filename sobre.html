@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCELL TECH | Sobre</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/componentes.css">
+
+    <style>
+        .about-container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 5%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .about-card {
+            background: var(--bg-panel);
+            border: 1px solid rgba(0, 240, 255, 0.15);
+            border-radius: 8px;
+            padding: 40px;
+            position: relative;
+        }
+
+        .about-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 4px; height: 100%;
+            background: var(--cyan-neon);
+        }
+
+        .about-card.dev-card::before {
+            background: var(--magenta-neon);
+        }
+        
+        .about-card.dev-card {
+            border-color: rgba(255, 0, 127, 0.15);
+        }
+
+        .about-title {
+            font-family: var(--font-tech);
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .about-text {
+            color: var(--text-muted);
+            line-height: 1.7;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .tech-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .tech-tag {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-light);
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-family: var(--font-tech);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho Padrão -->
+    <header>
+        <div class="brand-container">
+            <h1 class="brand-title">DCELL TECH</h1>
+            <span class="brand-subtitle">SYSTEM UPGRADE & REPAIR</span>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="simulador.html">Monte seu PC</a>
+            <a href="sobre.html" class="active">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <div class="header-actions" style="width: 100px;"></div> 
+    </header>
+
+    <main class="about-container">
+        
+        <!-- Card da Empresa -->
+        <div class="about-card">
+            <h2 class="about-title">
+                <i class="fa-solid fa-microchip" style="color: var(--cyan-neon);"></i> 
+                A DCELL-TECH SOLUTIONS
+            </h2>
+            <p class="about-text">
+                Idealizada como um laboratório de estudos práticos, a DCELL-Tech Solutions é uma iniciativa focada em explorar o limite entre hardware e software. Nosso objetivo é criar soluções eficientes em infraestrutura de TI, garantindo o máximo desempenho de equipamentos, seja para cenários competitivos de e-sports ou para estações de trabalho de alto processamento.
+            </p>
+            <p class="about-text">
+                Nossa arquitetura de projeto é construída sobre regras rígidas de compatibilidade e eficiência energética (TDP), simulando o rigor exigido em ambientes de tecnologia profissionais.
+            </p>
+        </div>
+
+        <!-- Card dos Desenvolvedores (EQUIPE) -->
+        <div class="about-card dev-card">
+            <h2 class="about-title">
+                <i class="fa-solid fa-users" style="color: var(--magenta-neon);"></i> 
+                OS DESENVOLVEDORES
+            </h2>
+            <p class="about-text">
+                Este ecossistema web foi projetado e desenvolvido por uma equipe dedicada de estudantes do curso de <strong>Análise e Desenvolvimento de Sistemas</strong>.
+            </p>
+            <p class="about-text">
+                O projeto funciona como uma ponte direta entre a teoria vista em sala de aula e os desafios do mercado de TI. Utilizamos conceitos sólidos de engenharia de software — como a manipulação dinâmica de interface (DOM) via JavaScript e a estruturação de dados em formato JSON — combinados com as melhores práticas de Experiência do Usuário (UX/UI).
+            </p>
+            
+            <div class="tech-tags">
+                <span class="tech-tag">HTML5 & CSS3</span>
+                <span class="tech-tag">JavaScript (ES6)</span>
+                <span class="tech-tag">UX/UI Design</span>
+                <span class="tech-tag">Web Storage API</span>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 DCELL-Tech Solutions. Todos os direitos reservados.</p>
+        <p style="margin-top: 5px; opacity: 0.5;">Projeto Acadêmico - Análise e Desenvolvimento de Sistemas</p>
+    </footer>
+
+</body>
+</html>

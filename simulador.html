@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCELL TECH | Simulator</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/componentes.css">
+</head>
+<body>
+
+    <header>
+        <div class="brand-container">
+            <h1 class="brand-title">DCELL TECH</h1>
+            <span class="brand-subtitle">SYSTEM UPGRADE & REPAIR</span>
+        </div>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="simulador.html" class="active">Monte seu PC</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="btn-tech btn-magenta" onclick="app.abrirModalReset()">
+                <i class="fa-solid fa-power-off"></i> RESET
+            </button>
+        </div>
+    </header>
+
+    <main class="layout-grid">
+        <section>
+            <nav class="nav-tabs" id="navTabs"></nav>
+            
+            <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                <h2 id="catTitle" style="font-family: var(--font-tech); font-size: 1.2rem; color: #fff;"></h2>
+            </div>
+
+            <div class="product-grid" id="productGrid"></div>
+        </section>
+
+        <aside class="rig-panel">
+            <h3 class="rig-header"><i class="fa-solid fa-server"></i> STATUS DO RIG</h3>
+            <ul class="rig-list" id="rigList"></ul>
+            
+            <div class="total-box">
+                <span>ESTIMATIVA TOTAL</span>
+                <strong id="rigTotal">R$ 0,00</strong>
+            </div>
+            
+            <div class="wattage-box">
+                <div class="wattage-header">
+                    <span>CONSUMO EST. (TDP)</span>
+                    <span id="wattageText" style="color: #fff;">0W / 0W</span>
+                </div>
+                <div class="wattage-bar-bg">
+                    <div class="wattage-fill" id="wattageBar"></div>
+                </div>
+                <p id="wattageAlert" style="font-size: 0.75rem; color: var(--magenta-neon); margin-top: 8px; font-weight: 600; display: none;">Risco Crítico: Fonte subdimensionada!</p>
+            </div>
+            
+            <button class="btn-tech" style="margin-top: 20px;" onclick="alert('Funcionalidade de Checkout será implementada nas próximas etapas do projeto.')">
+                <i class="fa-solid fa-microchip"></i> INICIAR MONTAGEM
+            </button>
+        </aside>
+    </main>
+
+    <div class="modal-bg" id="sysModal">
+        <div class="modal-content">
+            <i id="modalIcon" class="fa-solid fa-triangle-exclamation" style="font-size: 3rem; color: var(--magenta-neon);"></i>
+            <h3 class="modal-title" id="modalTitle">ALERTA</h3>
+            <p class="modal-text" id="modalText">Mensagem</p>
+            <div style="display: flex; gap: 15px; justify-content: center;" id="modalActions"></div>
+        </div>
+    </div>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/resumo.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+</html>

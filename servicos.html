@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCELL TECH | Serviços</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/componentes.css">
+
+    <style>
+        /* Estilos Locais da Página de Serviços */
+        .page-header {
+            text-align: center;
+            padding: 60px 5% 40px 5%;
+            background: linear-gradient(180deg, rgba(18, 11, 41, 0.8) 0%, transparent 100%);
+            border-bottom: 1px dashed rgba(0, 240, 255, 0.2);
+        }
+
+        .page-title {
+            font-family: var(--font-tech);
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+.service-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .svc-card {
+            flex: 1 1 300px;
+            max-width: 350px;
+            background: var(--bg-panel);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .svc-card:hover {
+            border-color: var(--cyan-neon);
+            box-shadow: var(--glow-cyan);
+            transform: translateY(-5px);
+        }
+
+        .svc-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 4px; height: 100%;
+            background: var(--cyan-neon);
+        }
+
+        .svc-card:nth-child(even)::before {
+            background: var(--magenta-neon);
+        }
+
+        .svc-card:nth-child(even):hover {
+            border-color: var(--magenta-neon);
+            box-shadow: var(--glow-magenta);
+        }
+
+        .svc-icon { font-size: 2rem; margin-bottom: 15px; color: #fff; }
+        .svc-card:nth-child(odd) .svc-icon { color: var(--cyan-neon); }
+        .svc-card:nth-child(even) .svc-icon { color: var(--magenta-neon); }
+
+        .svc-title { font-family: var(--font-tech); color: #fff; margin-bottom: 15px; font-size: 1.2rem; }
+        
+        .svc-list {
+            list-style: none;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .svc-list li {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .svc-list li i { font-size: 0.7rem; color: #fff; opacity: 0.5; }
+
+        .svc-price {
+            font-family: var(--font-tech);
+            font-size: 1.3rem;
+            color: #fff;
+            margin-bottom: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed rgba(255, 255, 255, 0.1);
+        }
+
+        /* Seção Como Funciona */
+        .workflow {
+            background: rgba(0,0,0,0.4);
+            padding: 60px 5%;
+            text-align: center;
+            border-top: 1px solid rgba(0, 240, 255, 0.1);
+        }
+
+        .workflow-steps {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .step { flex: 1; min-width: 200px; }
+        .step-number {
+            width: 50px; height: 50px;
+            border-radius: 50%;
+            background: transparent;
+            border: 2px solid var(--magenta-neon);
+            color: var(--magenta-neon);
+            display: flex; align-items: center; justify-content: center;
+            font-family: var(--font-tech); font-size: 1.5rem; font-weight: bold;
+            margin: 0 auto 15px auto;
+            box-shadow: var(--glow-magenta);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand-container">
+            <h1 class="brand-title">DCELL TECH</h1>
+            <span class="brand-subtitle">SYSTEM UPGRADE & REPAIR</span>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="servicos.html" class="active">Serviços</a>
+            <a href="simulador.html">Monte seu PC</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <div class="header-actions" style="width: 100px;"></div> 
+    </header>
+
+    <section class="page-header">
+        <h2 class="page-title">PROTOCOLOS DE ATENDIMENTO</h2>
+        <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Padrão técnico rigoroso para restaurar a performance do seu equipamento.</p>
+    </section>
+
+    <section class="service-grid">
+        <div class="svc-card">
+            <i class="fa-solid fa-fan svc-icon"></i>
+            <h3 class="svc-title">Limpeza Técnica</h3>
+            <ul class="svc-list">
+                <li><i class="fa-solid fa-check"></i> Remoção completa de poeira.</li>
+                <li><i class="fa-solid fa-check"></i> Limpeza de contatos (RAM/GPU).</li>
+                <li><i class="fa-solid fa-check"></i> Troca de pasta térmica.</li>
+                <li><i class="fa-solid fa-check"></i> Cable management básico.</li>
+            </ul>
+            <div class="svc-price">R$ 120,00</div>
+            <a href="contato.html" class="btn-tech">AGENDAR</a>
+        </div>
+
+        <div class="svc-card">
+            <i class="fa-solid fa-compact-disc svc-icon"></i>
+            <h3 class="svc-title">Formatação e Otimização</h3>
+            <ul class="svc-list">
+                <li><i class="fa-solid fa-check"></i> Instalação limpa do Windows.</li>
+                <li><i class="fa-solid fa-check"></i> Atualização de drivers e BIOS.</li>
+                <li><i class="fa-solid fa-check"></i> Remoção de bloatwares.</li>
+                <li><i class="fa-solid fa-check"></i> Otimização para maior FPS.</li>
+            </ul>
+            <div class="svc-price">R$ 100,00</div>
+            <a href="contato.html" class="btn-tech btn-magenta">AGENDAR</a>
+        </div>
+
+        <div class="svc-card">
+            <i class="fa-solid fa-microchip svc-icon"></i>
+            <h3 class="svc-title">Upgrade de Hardware</h3>
+            <ul class="svc-list">
+                <li><i class="fa-solid fa-check"></i> Instalação de SSD NVMe / SATA.</li>
+                <li><i class="fa-solid fa-check"></i> Adição de Memória RAM.</li>
+                <li><i class="fa-solid fa-check"></i> Instalação de Placa de Vídeo.</li>
+                <li><i class="fa-solid fa-check"></i> Verificação de compatibilidade.</li>
+            </ul>
+            <div class="svc-price">Consulte o Valor</div>
+            <a href="simulador.html" class="btn-tech" style="text-align:center; display:block;">IR PARA SIMULADOR</a>
+        </div>
+
+        <div class="svc-card">
+            <i class="fa-solid fa-stethoscope svc-icon"></i>
+            <h3 class="svc-title">Diagnóstico Avançado</h3>
+            <ul class="svc-list">
+                <li><i class="fa-solid fa-check"></i> Teste de stress em CPU e GPU.</li>
+                <li><i class="fa-solid fa-check"></i> Análise de saúde do HD/SSD.</li>
+                <li><i class="fa-solid fa-check"></i> Verificação de fonte e voltagens.</li>
+                <li><i class="fa-solid fa-check"></i> Solução para telas azuis.</li>
+            </ul>
+            <div class="svc-price">R$ 80,00*</div>
+            <p style="font-size:0.7rem; color:var(--text-muted); margin-top:-10px; margin-bottom:15px;">*Valor abatido caso o orçamento seja aprovado.</p>
+            <a href="contato.html" class="btn-tech btn-magenta">AGENDAR</a>
+        </div>
+    </section>
+
+    <section class="workflow">
+        <h3 style="font-family: var(--font-tech); color: #fff; font-size: 1.5rem;">COMO FUNCIONA?</h3>
+        
+        <div class="workflow-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h4 style="color: #fff; font-family: var(--font-tech); margin-bottom: 10px;">AGENDAMENTO</h4>
+                <p style="color: var(--text-muted); font-size: 0.85rem;">Entre em contato detalhando o problema ou o serviço desejado.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h4 style="color: #fff; font-family: var(--font-tech); margin-bottom: 10px;">DIAGNÓSTICO</h4>
+                <p style="color: var(--text-muted); font-size: 0.85rem;">Avaliação rigorosa do equipamento e envio do orçamento transparente.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h4 style="color: #fff; font-family: var(--font-tech); margin-bottom: 10px;">EXECUÇÃO</h4>
+                <p style="color: var(--text-muted); font-size: 0.85rem;">Manutenção realizada com precisão, testes de stress e devolução.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 DCELL-Tech Solutions. Todos os direitos reservados.</p>
+        <p style="margin-top: 5px; opacity: 0.5;">Projeto Acadêmico - Análise e Desenvolvimento de Sistemas</p>
+    </footer>
+
+</body>
+</html>

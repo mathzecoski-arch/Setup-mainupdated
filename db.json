@@ -1,0 +1,104 @@
+{
+  "processador": [
+    { "id": 1, "nome": "AMD Ryzen 7 5700X", "preco": 1150.00, "detalhes": "8 Cores, 16 Threads, AM4", "imagem": "img/ryzen75700x.jpg"},
+    { "id": 2, "nome": "AMD Ryzen 5 5600", "preco": 850.00, "detalhes": "6 Cores, 12 Threads, AM4", "imagem": "img/ryzen55600.jpg" },
+    { "id": 3, "nome": "AMD Ryzen 3 4100", "preco": 450.00, "detalhes": "4 Cores, 8 Threads, AM4", "imagem": "img/ryzen34100.jpg" },
+    { "id": 4, "nome": "AMD Ryzen 7 5800X3D", "preco": 2100.00, "detalhes": "8 Cores, 16 Threads, 3D V-Cache, AM4", "imagem": "img/ryzen75700x.jpg" },
+    { "id": 5, "nome": "AMD Ryzen 9 5950X", "preco": 3200.00, "detalhes": "16 Cores, 32 Threads, AM4", "imagem": "img/ryzen95900xt.jpg" },
+    { "id": 6, "nome": "Intel Core i5-12400F", "preco": 890.00, "detalhes": "6 Cores, 12 Threads, LGA 1700", "imagem": "img/Inteli5.jpg" },
+    { "id": 7, "nome": "Intel Core i5-13400F", "preco": 1350.00, "detalhes": "10 Cores, 16 Threads, LGA 1700", "imagem": "img/Inteli5.jpg" },
+    { "id": 8, "nome": "Intel Core i7-13700K", "preco": 2600.00, "detalhes": "16 Cores, 24 Threads, LGA 1700", "imagem": "img/Inteli7.jpg" },
+    { "id": 9, "nome": "Intel Core i9-13900K", "preco": 3900.00, "detalhes": "24 Cores, 32 Threads, LGA 1700", "imagem": "img/Inteli9.jpg" },
+    { "id": 10, "nome": "AMD Ryzen 5 7600", "preco": 1400.00, "detalhes": "6 Cores, 12 Threads, AM5", "imagem": "img/ryzen55600.jpg" }
+  ],
+  "placa_mae": [
+    { "id": 11, "nome": "ASUS TUF Gaming B550M-Plus", "preco": 950.00, "detalhes": "Micro ATX, AM4, DDR4, PCIe 4.0", "imagem": "img/AsusTUF.jpg" },
+    { "id": 12, "nome": "Gigabyte B450M DS3H V2", "preco": 580.00, "detalhes": "Micro ATX, AM4, DDR4", "imagem": "img/Gigabyte450am.jpg" },
+    { "id": 13, "nome": "MSI MAG B550 TOMAHAWK", "preco": 1250.00, "detalhes": "ATX, AM4, DDR4, PCIe 4.0", "imagem": "img/b550msi.jpg" },
+    { "id": 14, "nome": "ASUS Prime A320M-K", "preco": 380.00, "detalhes": "Micro ATX, AM4, DDR4", "imagem": "img/asus320m.jpg" },
+    { "id": 15, "nome": "ASUS ROG Strix B550-F Gaming", "preco": 1450.00, "detalhes": "ATX, AM4, Wi-Fi 6", "imagem": "img/asusrog.jpg" },
+    { "id": 16, "nome": "MSI PRO H610M-G", "preco": 550.00, "detalhes": "Micro ATX, LGA 1700, DDR4", "imagem": "img/msiproh610.jpg" },
+    { "id": 17, "nome": "ASUS Prime B660M-A", "preco": 850.00, "detalhes": "Micro ATX, LGA 1700, DDR4", "imagem": "img/b660.jpg" },
+    { "id": 18, "nome": "Gigabyte Z790 UD", "preco": 1600.00, "detalhes": "ATX, LGA 1700, DDR5", "imagem": "img/z790.jpg" },
+    { "id": 19, "nome": "MSI MPG B650 EDGE", "preco": 1800.00, "detalhes": "ATX, AM5, DDR5, Wi-Fi 6E", "imagem": "img/b650.jpg" },
+    { "id": 20, "nome": "ASRock B450M Steel Legend", "preco": 700.00, "detalhes": "Micro ATX, AM4, RGB", "imagem": "img/b450.jpg" }
+  ],
+  "memoria_ram": [
+    { "id": 21, "nome": "Corsair Vengeance LPX 8GB", "preco": 150.00, "detalhes": "3200MHz, DDR4, CL16", "imagem": "img/lpx8gb.jpg" },
+    { "id": 22, "nome": "Corsair Vengeance LPX 16GB", "preco": 280.00, "detalhes": "3200MHz, DDR4, CL16", "imagem": "img/lpx16gb.jpg" },
+    { "id": 23, "nome": "Kingston Fury Beast 8GB", "preco": 160.00, "detalhes": "3200MHz, DDR4, CL16", "imagem": "img/kings8gb.jpg" },
+    { "id": 24, "nome": "Kingston Fury Beast 16GB", "preco": 290.00, "detalhes": "3200MHz, DDR4, CL16", "imagem": "img/kings16gb.jpg" },
+    { "id": 25, "nome": "XPG Spectrix D41 8GB RGB", "preco": 180.00, "detalhes": "3200MHz, DDR4, CL16", "imagem": "img/xpg8gb.jpg" },
+    { "id": 26, "nome": "XPG Spectrix D41 16GB RGB", "preco": 330.00, "detalhes": "3600MHz, DDR4, CL18", "imagem": "img/xpg16gb.jpg" },
+    { "id": 27, "nome": "Crucial Ballistix 8GB", "preco": 170.00, "detalhes": "3200MHz, DDR4, CL16", "imagem": "img/crucial8gb.jpg" },
+    { "id": 28, "nome": "Team Group T-Force Delta 16GB", "preco": 340.00, "detalhes": "3600MHz, DDR4, RGB", "imagem": "img/tforce16gb.jpg" },
+    { "id": 29, "nome": "Kingston Fury Beast 16GB DDR5", "preco": 450.00, "detalhes": "4800MHz, DDR5, CL38", "imagem": "img/kg16gb.jpg" },
+    { "id": 30, "nome": "Corsair Dominator Platinum 32GB", "preco": 1200.00, "detalhes": "2x16GB, 5600MHz, DDR5", "imagem": "img/platinum32gb.jpg" }
+  ],
+  "armazenamento": [
+    { "id": 31, "nome": "SSD Kingston NV2 1TB", "preco": 380.00, "detalhes": "M.2 NVMe, Leitura: 3500MB/s", "imagem": "img/king1tb.jpg" },
+    { "id": 32, "nome": "SSD Kingston NV2 500GB", "preco": 240.00, "detalhes": "M.2 NVMe, Leitura: 3500MB/s", "imagem": "img/kings500gb.jpg" },
+    { "id": 33, "nome": "SSD WD Black SN850X 1TB", "preco": 750.00, "detalhes": "M.2 NVMe Gen4, Leitura: 7300MB/s", "imagem": "img/sn850.jpg" },
+    { "id": 34, "nome": "SSD WD Black SN850X 2TB", "preco": 1300.00, "detalhes": "M.2 NVMe Gen4, Leitura: 7300MB/s", "imagem": "img/sn8502tb.jpg" },
+    { "id": 35, "nome": "SSD Samsung 980 Pro 1TB", "preco": 800.00, "detalhes": "M.2 NVMe Gen4, Leitura: 7000MB/s", "imagem": "img/980pro.jpg" },
+    { "id": 36, "nome": "SSD Crucial P3 Plus 1TB", "preco": 450.00, "detalhes": "M.2 NVMe Gen4, Leitura: 5000MB/s", "imagem": "img/crucial1tb.jpg" },
+    { "id": 37, "nome": "SSD WD Green SN350 480GB", "preco": 210.00, "detalhes": "M.2 NVMe, Leitura: 2400MB/s", "imagem": "img/WDgreen.jpg" },
+    { "id": 38, "nome": "SSD Adata XPG Gammix S70 1TB", "preco": 680.00, "detalhes": "M.2 NVMe Gen4, Leitura: 7400MB/s", "imagem": "img/xpg.jpg" },
+    { "id": 39, "nome": "SSD SATA Kingston A400 480GB", "preco": 180.00, "detalhes": "SATA III 2.5\", Leitura: 500MB/s", "imagem": "img/king480.jpg" },
+    { "id": 40, "nome": "SSD SATA Crucial BX500 1TB", "preco": 350.00, "detalhes": "SATA III 2.5\", Leitura: 540MB/s", "imagem": "img/crucial1tbssd.jpg" }
+  ],
+  "placa_video": [
+    { "id": 81, "nome": "AMD Radeon RX 7600", "preco": 1700.00, "detalhes": "8GB GDDR6, FSR 2.0, 165W", "imagem": "img/rx7600.jpg" },
+    { "id": 82, "nome": "NVIDIA GeForce RTX 4060", "preco": 1800.00, "detalhes": "8GB GDDR6, DLSS 3, 115W", "imagem": "img/4060.jpg" },
+    { "id": 83, "nome": "AMD Radeon RX 7800 XT", "preco": 3500.00, "detalhes": "16GB GDDR6, 263W", "imagem": "img/7800.jpg" },
+    { "id": 84, "nome": "NVIDIA GeForce RTX 4070", "preco": 3800.00, "detalhes": "12GB GDDR6X, DLSS 3, 200W", "imagem": "img/4070.jpg" }
+  ],
+  "refrigeracao": [
+    { "id": 41, "nome": "Air Cooler Deepcool AK400", "preco": 180.00, "detalhes": "120mm, 4 Heatpipes", "imagem": "img/ak400.jpg" },
+    { "id": 42, "nome": "Air Cooler Scythe Fuma 2", "preco": 450.00, "detalhes": "Dual Tower, 120mm", "imagem": "img/scythe.jpg" },
+    { "id": 43, "nome": "Air Cooler CM Hyper 212", "preco": 220.00, "detalhes": "120mm, Black Edition", "imagem": "img/212.jpg" },
+    { "id": 44, "nome": "Air Cooler Noctua NH-D15", "preco": 850.00, "detalhes": "Premium Dual Tower, 140mm", "imagem": "img/noctua.jpg" },
+    { "id": 45, "nome": "Air Cooler Deepcool AG400", "preco": 150.00, "detalhes": "120mm, 4 Heatpipes", "imagem": "img/ag400.jpg" },
+    { "id": 46, "nome": "Water Cooler Corsair H100i", "preco": 950.00, "detalhes": "240mm, RGB", "imagem": "img/h100.jpg" },
+    { "id": 47, "nome": "Water Cooler NZXT Kraken X53", "preco": 1100.00, "detalhes": "240mm, Infinity Mirror", "imagem": "img/kraken.jpg" },
+    { "id": 48, "nome": "Water Cooler CM ML240L V2", "preco": 450.00, "detalhes": "240mm, ARGB", "imagem": "img/v2.jpg" },
+    { "id": 49, "nome": "Water Cooler Lian Li Galahad", "preco": 800.00, "detalhes": "240mm, ARGB", "imagem": "img/galahad.jpg" },
+    { "id": 50, "nome": "Water Cooler PCyes Sangue Frio 2", "preco": 300.00, "detalhes": "120mm, Foco em Custo Benefício", "imagem": "img/pcyes.jpg" }
+  ],
+  "energia": [
+    { "id": 51, "nome": "Fonte Duex 600W", "preco": 280.00, "detalhes": "80 Plus Bronze, Bivolt", "imagem": "img/duex.jpg" },
+    { "id": 52, "nome": "Fonte Corsair CV550 550W", "preco": 350.00, "detalhes": "80 Plus Bronze, PFC Ativo", "imagem": "img/cv550.jpg" },
+    { "id": 53, "nome": "Fonte MSI MAG A650BN 650W", "preco": 380.00, "detalhes": "80 Plus Bronze, PFC Ativo", "imagem": "img/mag.jpg" },
+    { "id": 54, "nome": "Fonte XPG Core Reactor 850W", "preco": 750.00, "detalhes": "80 Plus Gold, Modular", "imagem": "img/xpg850.jpg" },
+    { "id": 55, "nome": "Fonte XPG Core Reactor 750W", "preco": 650.00, "detalhes": "80 Plus Gold, Modular", "imagem": "img/xpg750.jpg" },
+    { "id": 56, "nome": "Fonte Pichau Nidus 500W", "preco": 280.00, "detalhes": "80 Plus Bronze", "imagem": "img/nidus500.jpg" },
+    { "id": 57, "nome": "Fonte EVGA 600 W1 600W", "preco": 320.00, "detalhes": "80 Plus White", "imagem": "img/evga.jpg" },
+    { "id": 58, "nome": "Fonte Super Flower Leadex III 750W", "preco": 800.00, "detalhes": "80 Plus Gold, Modular", "imagem": "img/flower.jpg" },
+    { "id": 59, "nome": "Fonte Cooler Master MWE 600W", "preco": 360.00, "detalhes": "80 Plus Bronze", "imagem": "img/mwe.jpg" },
+    { "id": 60, "nome": "Fonte Corsair RM850x 850W", "preco": 1100.00, "detalhes": "80 Plus Gold, Full Modular", "imagem": "img/rm850.jpg" }
+  ],
+  "gabinetes": [
+    { "id": 61, "nome": "Gabinete Montech Air 100", "preco": 300.00, "detalhes": "Micro ATX, 4 Fans ARGB", "imagem": "img/montech.jpg" },
+    { "id": 62, "nome": "Gabinete Pichau Apus Black", "preco": 180.00, "detalhes": "Mid Tower, Lateral em Vidro", "imagem": "img/apus.jpg" },
+    { "id": 63, "nome": "Gabinete Corsair 4000D Airflow", "preco": 650.00, "detalhes": "Mid Tower, Painel Frontal Otimizado", "imagem": "img/airflow.jpg" },
+    { "id": 64, "nome": "Gabinete Lian Li Lancool II Mesh", "preco": 850.00, "detalhes": "Mid Tower, Excelente Fluxo de Ar", "imagem": "img/mesh.jpg" },
+    { "id": 65, "nome": "Gabinete NZXT H510 Flow", "preco": 550.00, "detalhes": "Mid Tower, Minimalista", "imagem": "img/h510.jpg" },
+    { "id": 66, "nome": "Gabinete Galax Nebulosa", "preco": 250.00, "detalhes": "Micro ATX, Vidro Temperado", "imagem": "img/galax.jpg" },
+    { "id": 67, "nome": "Gabinete Redragon Supercharger", "preco": 320.00, "detalhes": "Mid Tower, Fans Inclusos", "imagem": "img/reddragon.jpg" },
+    { "id": 68, "nome": "Gabinete T-Dagger Cube", "preco": 160.00, "detalhes": "Micro ATX, Compacto", "imagem": "img/cube.jpg" },
+    { "id": 69, "nome": "Gabinete Cooler Master Q300L", "preco": 280.00, "detalhes": "Micro ATX, Filtros Magnéticos", "imagem": "img/q300.jpg" },
+    { "id": 70, "nome": "Gabinete NZXT H7 Flow", "preco": 950.00, "detalhes": "Mid Tower Premium, Alta Ventilação", "imagem": "img/nzxt.jpg" }
+  ],
+  "perifericos": [
+    { "id": 71, "nome": "Mouse Logitech G Pro X Superlight", "preco": 750.00, "detalhes": "Wireless, 63g, Sensor Hero 25K", "imagem": "img/gpro.jpg" },
+    { "id": 72, "nome": "Mouse Razer DeathAdder V2", "preco": 350.00, "detalhes": "Sensor Óptico 20K, Design Ergonômico", "imagem": "img/razer.jpg" },
+    { "id": 73, "nome": "Mouse Zowie EC2-C", "preco": 500.00, "detalhes": "Design Assimétrico, Sensor 3360", "imagem": "img/zowie.jpg" },
+    { "id": 74, "nome": "Teclado HyperX Alloy Origins", "preco": 600.00, "detalhes": "Mecânico, Switches HyperX Red", "imagem": "img/alloy.jpg" },
+    { "id": 75, "nome": "Teclado Redragon Kumara", "preco": 200.00, "detalhes": "Mecânico, Switch Outemu Blue/Brown", "imagem": "img/kumara.jpg" },
+    { "id": 76, "nome": "Headset HyperX Cloud II", "preco": 550.00, "detalhes": "Som Surround 7.1 Virtual", "imagem": "img/Cloud.jpg" },
+    { "id": 77, "nome": "Monitor AOC Hero 24\"", "preco": 850.00, "detalhes": "144Hz, IPS, 1ms", "imagem": "img/Aoc.jpg" },
+    { "id": 78, "nome": "Monitor BenQ Zowie XL2411K", "preco": 1600.00, "detalhes": "144Hz, TN, DyAc (Foco Competitivo)", "imagem": "img/Benq.jpg" },
+    { "id": 79, "nome": "Mousepad SteelSeries QcK Heavy", "preco": 180.00, "detalhes": "Tamanho G, Base Emborrachada", "imagem": "img/qck.jpg" },
+    { "id": 80, "nome": "Headset Razer Kraken V3", "preco": 650.00, "detalhes": "Áudio Espacial THX", "imagem": "img/krakenv3.jpg" }
+  ]
+}

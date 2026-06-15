@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCELL TECH | Contato</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/componentes.css">
+
+    <style>
+        .contact-section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .info-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(0, 240, 255, 0.1);
+            padding: 25px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: 0.3s;
+        }
+
+        .info-card:hover {
+            border-color: var(--cyan-neon);
+            background: rgba(0, 240, 255, 0.05);
+        }
+
+        .info-icon {
+            font-size: 2rem;
+            color: var(--cyan-neon);
+        }
+
+        .info-text h4 {
+            font-family: var(--font-tech);
+            color: #fff;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .info-text p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Estilização do Formulário */
+        .contact-form-container {
+            background: var(--bg-panel);
+            padding: 40px;
+            border-radius: 8px;
+            border-top: 4px solid var(--magenta-neon);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .form-title {
+            font-family: var(--font-tech);
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            color: var(--text-light);
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            font-family: var(--font-tech);
+        }
+
+        .form-control {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 12px 15px;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            transition: 0.3s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--magenta-neon);
+            box-shadow: 0 0 10px rgba(255, 0, 127, 0.2);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Mensagem de Sucesso Fictícia */
+        #success-msg {
+            display: none;
+            background: rgba(0, 255, 127, 0.1);
+            border: 1px solid #00ff7f;
+            color: #00ff7f;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 20px;
+            text-align: center;
+            font-family: var(--font-tech);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho Padrão -->
+    <header>
+        <div class="brand-container">
+            <h1 class="brand-title">DCELL TECH</h1>
+            <span class="brand-subtitle">SYSTEM UPGRADE & REPAIR</span>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="simulador.html">Monte seu PC</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html" class="active">Contato</a>
+        </nav>
+        <div class="header-actions" style="width: 100px;"></div> 
+    </header>
+
+    <main class="contact-section">
+        
+        <!-- Coluna 1: Informações de contato -->
+        <div class="contact-info">
+            <div>
+                <h2 style="font-family: var(--font-tech); color: #fff; margin-bottom: 10px; font-size: 2rem;">FALE CONOSCO</h2>
+                <p style="color: var(--text-muted); line-height: 1.6;">
+                    Tem alguma dúvida sobre compatibilidade de peças ou precisa de um orçamento para manutenção? Mande uma mensagem para a nossa equipe.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <i class="fa-solid fa-envelope info-icon"></i>
+                <div class="info-text">
+                    <h4>E-MAIL CORPORATIVO</h4>
+                    <p>suporte@dcelltech.com.br</p>
+                </div>
+            </div>
+
+            <div class="info-card" style="border-color: rgba(255, 0, 127, 0.2);">
+                <i class="fa-brands fa-whatsapp info-icon" style="color: var(--magenta-neon);"></i>
+                <div class="info-text">
+                    <h4>WHATSAPP (ORÇAMENTOS)</h4>
+                    <p>(41) 99999-0000</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <i class="fa-solid fa-location-dot info-icon"></i>
+                <div class="info-text">
+                    <h4>LABORATÓRIO BASE</h4>
+                    <p>Projeto Acadêmico - ADS</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coluna 2: Formulário -->
+        <div class="contact-form-container">
+            <h3 class="form-title">ABRIR CHAMADO / ORÇAMENTO</h3>
+            
+            <!-- Usamos onsubmit para simular o envio usando JavaScript -->
+            <form id="formContato" onsubmit="simularEnvio(event)">
+                <div class="form-group">
+                    <label for="nome">NOME COMPLETO</label>
+                    <input type="text" id="nome" class="form-control" placeholder="Ex: João da Silva" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-MAIL</label>
+                    <input type="email" id="email" class="form-control" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="assunto">ASSUNTO</label>
+                    <select id="assunto" class="form-control" required>
+                        <option value="">Selecione uma opção...</option>
+                        <option value="simulador">Dúvida sobre o Simulador</option>
+                        <option value="manutencao">Orçamento de Manutenção</option>
+                        <option value="upgrade">Consultoria de Upgrade</option>
+                        <option value="outros">Outros assuntos</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">MENSAGEM</label>
+                    <textarea id="mensagem" class="form-control" placeholder="Descreva seu problema ou solicitação..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-tech btn-magenta" style="width: 100%; justify-content: center;">
+                    <i class="fa-solid fa-paper-plane"></i> ENVIAR MENSAGEM
+                </button>
+            </form>
+
+            <!-- Alerta de Sucesso -->
+            <div id="success-msg">
+                <i class="fa-solid fa-check-circle"></i> Mensagem enviada com sucesso! Retornaremos em breve.
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 DCELL-Tech Solutions. Todos os direitos reservados.</p>
+        <p style="margin-top: 5px; opacity: 0.5;">Projeto Acadêmico - Análise e Desenvolvimento de Sistemas</p>
+    </footer>
+
+    <!-- Script simples para formulário -->
+    <script>
+        function simularEnvio(event) {
+            event.preventDefault(); // Impede a página de recarregar
+            
+            // Esconde o formulário e mostra a mensagem de sucesso
+            document.getElementById('formContato').style.display = 'none';
+            document.getElementById('success-msg').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
